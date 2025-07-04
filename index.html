@@ -10,8 +10,9 @@
     - primary meta tags
   -->
   <title>Shoham Mallick || Craftopia - We Make Top Quality Handmade Products</title>
+  <link rel="manifest" href="./manifest.json">
   <meta name="title" content="Craftopia - We Make Top Quality Handmade Products">
-  <meta name="description" content="This is a Handmade Products html template made by codewithsadee">
+  <meta name="description" content="This is a Handmade Products html template made by Shoham Mallick">
 
   <!-- 
     - favicon
@@ -868,6 +869,13 @@ Whether crafting handmade goods or developing new ideas, innovation drives every
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./service-worker.js')
+    .then(() => console.log("Service Worker registered"))
+    .catch(err => console.error("Service Worker registration failed", err));
+}
+</script>
 
 </body>
 
